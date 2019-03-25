@@ -1,0 +1,35 @@
+.postContainerWrapper {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    color: black;
+    
+}
+
+.upperThumbnailAndUsername {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid blue; */
+    padding: 10px 15px 8px;
+    font-size: 14px;
+
+}
+.upperThumbnail img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+.upperUsername {
+    padding: 0 15px;
+    font-weight: bold;
+
+}
+
+.postMainPhoto {
+    padding: px;
+}
