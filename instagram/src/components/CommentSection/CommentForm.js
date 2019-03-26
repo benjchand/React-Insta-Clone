@@ -2,7 +2,7 @@ import React from 'react';
 
 const CommentForm = props => {
     return (
-        <form>
+        <form className='add-comment-form'>
             <input 
                 // value={props.value}
                 // onChange={props.changeToDoItemForm}
