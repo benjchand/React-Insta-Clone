@@ -11,20 +11,24 @@ const PostContainer = props => {
                     <IndividualPost 
                         key = {itemFromArrayBeingExamined.id}
                         item = {itemFromArrayBeingExamined}
+                        commentSection = {itemFromArrayBeingExamined.comments}
+                        likes = {itemFromArrayBeingExamined.likes}
+                        timestamp = {itemFromArrayBeingExamined.timestamp}
+                        
                     />
                 ))}
             </div>
 
-            <div className = "postCommentWrapper">
-                {props.commentDataArrayBeingReferenced.map(itemFromArrayBeingExamined => (
+            {/* <div className = "postCommentWrapper">
+                {props.commentDataArrayBeingReferenced.map(itemFromCommentArrayBeingExamined => (
                     <CommentSection
-                        key = {itemFromArrayBeingExamined.comments.id}
-                        item = {itemFromArrayBeingExamined}
-                        username = {itemFromArrayBeingExamined.username}
-                        text = {itemFromArrayBeingExamined.text}
+                        key = {itemFromCommentArrayBeingExamined.id}
+                        item = {itemFromCommentArrayBeingExamined}
+                        username = {itemFromCommentArrayBeingExamined.username}
+                        text = {itemFromCommentArrayBeingExamined.text}
                     />
                 ))}
-            </div>
+            </div> */}
 
         </div>
     )

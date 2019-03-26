@@ -33,3 +33,12 @@
 .postMainPhoto {
     padding: px;
 }
+
+.commentIconSection {
+    display: flex;
+}
+
+.commentLikeSection {
+    display: flex;
+    /* flex-direction: column; */
+}

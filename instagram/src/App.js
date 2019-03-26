@@ -2,10 +2,16 @@ import React, { Component } from 'react';
 import './App.css';
 import './components/PostContainer/PostContainer.css';
 import './components/SearchBar/SearchBar.css';
+import './components/CommentSection/CommentSection.css';
+
 
 import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar'
 import PostContainer from './components/PostContainer/PostContainer'
+
+// const commentSectionArray = dummyData.map (itemBeingExamined =>(
+//   itemBeingExamined.comments
+// ))
 
 class App extends Component {
   
@@ -14,6 +20,7 @@ class App extends Component {
   
       this.state = {
         allDummyData: dummyData,
+        // commentSectionData: commentSectionArray
       };
   
     };
@@ -23,14 +30,14 @@ class App extends Component {
         <header className="App-header">
          <SearchBar/>
         </header>
-        <body className="App-body">
+        <div className="App-body">
           <PostContainer 
           dummyDataArrayBeingReferenced = {this.state.allDummyData}
-          commentDataArrayBeingReferenced ={this.state.allDummyData.comments}
+          // commentDataArrayBeingReferenced ={this.state.commentSectionData}
           
           />
 
-        </body>
+        </div>
       </div>
     );
   }

@@ -1,0 +1,28 @@
+.commentDataSection {
+    display: flex;
+}
+
+.commentLikeSection {
+    font-weight: bold;
+}
+.postBottomSection {
+    margin: 15px;
+}
+
+.commentIconSection img {
+    padding: 0 10px 10px 0;
+}
+
+.commentLikeSection {
+    padding-bottom: 10px;
+}
+
+.commentLikeData {
+    padding-right: 5px;
+}
+.commentUserName {
+    font-weight: bold;
+    padding: 0 5px 10px 0;
+
+
+}
