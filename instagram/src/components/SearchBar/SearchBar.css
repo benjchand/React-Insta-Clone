@@ -8,17 +8,34 @@
     padding: 12px;
     border-bottom: 2px solid rgb(86, 86, 86);
     position: fixed;
-    top: 0;
+    top: -2px;
+}
+
+.searchBarInstagram {
+    display: flex;
 }
 
 .fab {
     color: black;
-    font-size: 2rem;
-    padding: 0 15px;
+    font-size: 32px;
+    padding: 0 25px 0 15px;
+    border-right: 1px solid rgb(114, 113, 113);
+}
+
+.instagramBrandName {
+    padding: 0 0 0 25px;
+
+
 }
 
 .searchBarSearchForm > input {
-
+    height: 20px;
+    text-align: center;
+    width: 180px;
+    background-color: rgb(244, 244, 244);
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    
 }
 
 .searchBarRightIcons {
@@ -27,12 +44,10 @@
 
 .searchBarRightIcons > i {
     padding: 0 15px;
+    color: rgb(95, 94, 94);
+    font-size: 22px;
 }
 
 
 
-.far {
-    color: rgb(125, 125, 125);
-    font-size: 20px;
-}
 

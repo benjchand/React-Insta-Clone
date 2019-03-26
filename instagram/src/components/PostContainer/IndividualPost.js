@@ -16,16 +16,8 @@ const IndividualPost = props => {
       </div>
       <div className="postBottomSection">
         <div className="commentIconSection">
-          <img
-            src="https://cdn1.iconfinder.com/data/icons/ui-22/24/496-512.png"
-            width="22"
-            height="22"
-          />
-          <img
-            src="https://cdn1.iconfinder.com/data/icons/ui-22/24/496-512.png"
-            width="22"
-            height="22"
-          />
+          <i className = "far fa-heart"></i>
+          <i class="far fa-comment"></i>
         </div>
         <div className="commentLikeSection">
           <div className="commentLikeData">{props.likes}</div>

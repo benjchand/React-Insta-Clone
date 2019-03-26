@@ -1,11 +1,12 @@
 import React from 'react';
+import Logo from '../../img/Instagram_logo.png';
 
 const SearchBar = props => {
     return (
         <div className = 'searchBarWrapper'>
             <div className = 'searchBarInstagram'>
-                <i class = "fab fa-instagram"></i>
-                <img src = "../../img/Instagram_logo.png"/>
+                <i className = "fab fa-instagram"></i>
+                <img src = {Logo} className = 'instagramBrandName' width ='100' height = '37'/>
 
 
             </div>
@@ -14,7 +15,7 @@ const SearchBar = props => {
                 <input 
                     // value={props.value}
                     // onChange={props.changeToDoItemForm}
-                    placeholder='Add a comment...'
+                    placeholder='Search'
                 
                 />
                 
@@ -26,9 +27,9 @@ const SearchBar = props => {
         </form>
             </div>
             <div className = 'searchBarRightIcons'>
-                <i class = "far fa-compass"></i>
-                <i class = "far fa-heart"></i>
-                <i class = "far fa-user"></i>
+                <i className = "far fa-compass"></i>
+                <i className = "far fa-heart"></i>
+                <i className = "far fa-user"></i>
 
             </div>
         </div>
