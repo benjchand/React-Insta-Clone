@@ -9,9 +9,7 @@ import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar'
 import PostContainer from './components/PostContainer/PostContainer'
 
-// const commentSectionArray = dummyData.map (itemBeingExamined =>(
-//   itemBeingExamined.comments
-// ))
+
 
 class App extends Component {
   
@@ -20,7 +18,7 @@ class App extends Component {
   
       this.state = {
         allDummyData: dummyData,
-        // commentSectionData: commentSectionArray
+        formString: ''
       };
   
     };

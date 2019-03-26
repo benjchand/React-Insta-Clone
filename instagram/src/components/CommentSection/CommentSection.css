@@ -1,20 +1,24 @@
 .commentDataSection {
-    display: flex;
+    padding: 0 0 10px;
 }
-
+.commentContainerWrapper {
+    display: flex;
+    text-align: start;
+}
 .commentLikeSection {
     font-weight: bold;
 }
 .postBottomSection {
-    margin: 15px;
+    margin: 10px 15px;
+    font-size: 14px;
 }
 
 .commentIconSection img {
-    padding: 0 10px 10px 0;
+    padding: 0 10px 8px 0;
 }
 
 .commentLikeSection {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .commentLikeData {
@@ -22,7 +26,26 @@
 }
 .commentUserName {
     font-weight: bold;
-    padding: 0 5px 10px 0;
-
+    padding: 0 5px 8px 0;
 
 }
+.commentText {
+    text-align: start;
+}
+
+.addCommentForm {
+    margin: 5px 0;
+    display: flex;
+
+}
+
+form > input {
+    border: 0;
+    padding: 10px 0;
+    font-size: 15px;
+    width: 530px;
+    /* outline: 0; */
+    color: lightgray;
+    font-weight: bold;
+    margin-right: 8px;
+  }

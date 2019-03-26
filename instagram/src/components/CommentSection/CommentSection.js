@@ -11,12 +11,10 @@ const CommentSection = props => {
             </div>
 
             <div className = "commentDataSection">
-                <div className = "commentUserName">
+                <span className = "commentUserName">
                     {props.username}
-                </div>
-                <div className = "commentText">
+                </span>
                     {props.text}
-                </div>
             </div>
 
         </div>
