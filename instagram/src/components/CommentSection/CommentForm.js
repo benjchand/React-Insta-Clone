@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const CommentForm = props => {
     return (
         <form className='add-comment-form'>
@@ -18,5 +19,6 @@ const CommentForm = props => {
         </form>
     )
 }
+
 
 export default CommentForm;

@@ -1,6 +1,6 @@
 import React from 'react';
 import IndividualPost from './IndividualPost';
-import CommentSection from '../CommentSection/CommentSection';
+import PropTypes from 'prop-types';
 
 const PostContainer = props => {
     return (
@@ -9,8 +9,8 @@ const PostContainer = props => {
             <div className = "postImageWrapper">
                 {props.dummyDataArrayBeingReferenced.map(itemFromArrayBeingExamined => (
                     <IndividualPost 
-                        key = {itemFromArrayBeingExamined.id}
                         item = {itemFromArrayBeingExamined}
+                        key = {itemFromArrayBeingExamined.id}
                         commentSection = {itemFromArrayBeingExamined.comments}
                         likes = {itemFromArrayBeingExamined.likes}
                         timestamp = {itemFromArrayBeingExamined.timestamp}
@@ -19,19 +19,14 @@ const PostContainer = props => {
                 ))}
             </div>
 
-            {/* <div className = "postCommentWrapper">
-                {props.commentDataArrayBeingReferenced.map(itemFromCommentArrayBeingExamined => (
-                    <CommentSection
-                        key = {itemFromCommentArrayBeingExamined.id}
-                        item = {itemFromCommentArrayBeingExamined}
-                        username = {itemFromCommentArrayBeingExamined.username}
-                        text = {itemFromCommentArrayBeingExamined.text}
-                    />
-                ))}
-            </div> */}
-
         </div>
     )
 }
+
+PostContainer.propTypes = {
+    dummyDataArrayBeingReferenced: PropTypes.arrayOf(PropTypes.object)
+};
+
+
 
 export default PostContainer
