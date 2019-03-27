@@ -34,8 +34,15 @@
     width: 180px;
     background-color: rgb(244, 244, 244);
     border: 1px solid lightgray;
+    border-right: none;
     border-radius: 4px;
+    /* background-image: url(https://www.pinclipart.com/picdir/middle/15-157992_lens-clipart-magnifier-magnifying-glass-icon-grey-png.png) */
     
+}
+
+.searchBarSearchForm > button {
+    height: 24px;
+    border-left:none;
 }
 
 .searchBarRightIcons {

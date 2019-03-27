@@ -2,29 +2,40 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
+class CommentSection extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            username: props.username,
+            text: props.text,
+            newUsername: 'Hardcoded Username',
+            newComment: ''
+        }
+    }
 
-const CommentSection = props => {
 
-    return (
-        <div className = 'commentContainerWrapper'>
+    render(){
+        return (
+            <div className = 'commentContainerWrapper'>
 
-            <div className = "commentIconWrapper">
+                <div className = "commentIconWrapper">
+                </div>
+
+                <div className = "commentDataSection">
+                    <span className = "commentUserName">
+                        {this.state.username}
+                    </span>
+                        {this.state.text}
+                </div>
+
             </div>
-
-            <div className = "commentDataSection">
-                <span className = "commentUserName">
-                    {props.username}
-                </span>
-                    {props.text}
-            </div>
-
-        </div>
-    )
+        )
+    }
 }
 
 CommentSection.propTypes ={
     text: PropTypes.string.isRequired,
-    
+
 }
 
 

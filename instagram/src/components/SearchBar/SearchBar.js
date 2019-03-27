@@ -1,29 +1,31 @@
 import React from 'react';
 import Logo from '../../img/Instagram_logo.png';
 
+
 const SearchBar = props => {
+    
     return (
         <div className = 'searchBarWrapper'>
             <div className = 'searchBarInstagram'>
                 <i className = "fab fa-instagram"></i>
-                <img src = {Logo} className = 'instagramBrandName' width ='100' height = '37'/>
+                <img src = {Logo} className = 'instagramBrandName' alt = 'Instagram Logo' width ='100' height = '37'/>
 
 
             </div>
             <div className = 'searchBarSearchWrapper'>
                 <form className = 'searchBarSearchForm'>
-                <input 
-                    // value={props.value}
-                    // onChange={props.changeToDoItemForm}
-                    placeholder='Search'
-                
-                />
-                
+                    <input 
+                        value={props.infomationBeingSearched}
+                        onChange={props.changeSearchInput}
+                        placeholder='Search'
+                        // onChange={props.searchIconFunction}
+                    
+                    />
+                    
 
 
 
-                {/* <button onClick={props.addToDoListForm}> Add Item</button>
-                <button onClick={props.clearCompletedTasksForm}> Clear Completed</button> */}
+                    <button className='searchBarButton' onClick={props.searchIconFunction}><i className="fas fa-search"></i> </button>
         </form>
             </div>
             <div className = 'searchBarRightIcons'>

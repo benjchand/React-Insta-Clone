@@ -13,7 +13,9 @@ const PostContainer = props => {
                         key = {itemFromArrayBeingExamined.id}
                         commentSection = {itemFromArrayBeingExamined.comments}
                         likes = {itemFromArrayBeingExamined.likes}
+                        likedOrNot = {itemFromArrayBeingExamined.liked}
                         timestamp = {itemFromArrayBeingExamined.timestamp}
+                        
                         
                     />
                 ))}

@@ -36,16 +36,27 @@
 .addCommentForm {
     margin: 5px 0;
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 
 }
 
 .add-comment-form > input {
     border: 0;
-    padding: 10px 0;
+    padding: 10px 3px;
     font-size: 15px;
-    width: 530px;
+    width: 520px;
     /* outline: 0; */
-    color: lightgray;
-    font-weight: bold;
+    color: black;
     margin-right: 8px;
   }
+  
+  .add-comment-form > button {
+      border: none;
+      vertical-align: middle;
+      line-height: 30px;
+      font-size: 22px;
+      
+      
+  }
+
