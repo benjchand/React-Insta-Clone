@@ -45,12 +45,12 @@ class App extends Component {
         return postBeingExamined.username == this.state.searchString;
       })
       this.setState({
-        allDummyData: newArray
+        allDummyData: newArray,
       })
       // return newArray;
     } else {
       this.setState({
-      allDummyData: dummyData
+      allDummyData: dummyData,
     })}
 
   }

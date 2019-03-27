@@ -28,21 +28,32 @@
 
 }
 
+.searchBarSearchForm {
+    display:flex;
+    border: 1px solid lightgray;
+    /* border: none; */
+    border-radius: 4px;
+    /* background-color: rgb(244, 244, 244); */
+
+
+}
+
 .searchBarSearchForm > input {
-    height: 20px;
+    height: 22px;
     text-align: center;
     width: 180px;
-    background-color: rgb(244, 244, 244);
-    border: 1px solid lightgray;
-    border-right: none;
-    border-radius: 4px;
+    /* border-right: 1px solid lightgray; */
+    font-size: 16px;
+    border: none;
     /* background-image: url(https://www.pinclipart.com/picdir/middle/15-157992_lens-clipart-magnifier-magnifying-glass-icon-grey-png.png) */
     
 }
 
 .searchBarSearchForm > button {
     height: 24px;
-    border-left:none;
+    border: none;
+    border-left: 1px solid lightgray;;
+
 }
 
 .searchBarRightIcons {
