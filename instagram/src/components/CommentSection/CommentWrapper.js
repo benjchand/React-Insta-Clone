@@ -27,7 +27,7 @@ class CommentWrapper extends React.Component {
 
     addNewComment = (event) => {
         event.preventDefault();
-        const placeHolderComment = {id: Date.now(), username: this.state.newUsername, text: this.state.newComment};
+        const placeHolderComment = {id: Date.now(), username: localStorage.getItem('username'), text: this.state.newComment};
         if(placeHolderComment.text !== ""){
             this.setState({
             comments: [...this.state.comments, placeHolderComment],
